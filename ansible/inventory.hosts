@@ -1,0 +1,9 @@
+[web_servers]
+3.81.139.59
+3.87.159.247
+18.234.26.117
+54.85.158.189
+
+[web_servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/.ssh/aws_keypair.pem

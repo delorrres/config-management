@@ -1,0 +1,14 @@
+---
+- hosts: web_servers
+  become: true
+  tasks: 
+    - name: update apt-get(yum in centOS)repository
+      apt:
+        name: "*"
+        update_cache: yes
+
+    - name: Install nginx
+      apt:
+        name: "nginx"
+        state: present
+
